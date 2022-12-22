@@ -1,0 +1,6 @@
+export {default as Hero } from './Hero'
+export {default as Shows } from './Shows'
+export {default as Contact } from './Contact'
+export {default as Music } from './Music'
+export {default as News } from './News'
+export {default as Videos } from './Videos'

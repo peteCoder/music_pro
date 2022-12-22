@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'); */
+
+html, body {
+    scroll-behavior: smooth;
+    transition: .5s ease-in;
+    font-family: cursive;
+}
+
+body.remove-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: white !important;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 2rem  !important;
+}
+
+.special-text {
+    -webkit-text-stroke: 2px #fff;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.15);
+}
+
+.special-text-black {
+    -webkit-text-stroke: 2px  rgba(0, 0, 0, 0.15);
+    -webkit-text-fill-color: #fff;
+}
+
+body {
+    background-color: black;
+}
+
+@layer components {
+    .socials {
+        @apply h-10 w-10 rounded-full flex justify-center items-center cursor-pointer text-white ;
+    }
+    .social-icons {
+        @apply font-bold text-xl ;
+    }
+}
