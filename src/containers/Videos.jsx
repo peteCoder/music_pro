@@ -38,8 +38,7 @@ const Videos = () => {
                 title="videos"
                 position="text-left"
             />
-
-            {/* 'https://www.youtube.com/embed/' + id + '?showinfo=0&enablejsapi=1&origin=http://localhost:9000'; */}
+            
             <div className="p-6">
                 <div className="flex flex-col justify-center items-center w-full space-y-5">
                     {playing && (

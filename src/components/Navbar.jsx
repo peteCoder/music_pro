@@ -95,16 +95,16 @@ const Navbar = () => {
           <Link to='' className='socials'>
             <FaFacebookF className='social-icons text-black' />
           </Link>
-          <Link className='socials'>
+          <Link to='' className='socials'>
             <FaTwitter className='social-icons text-black' />
           </Link>
-          <Link className='socials'>
+          <Link to='' className='socials'>
             <FaInstagram className='social-icons text-black' />
           </Link>
-          <Link className='socials'>
+          <Link to='' className='socials'>
             <FaMailBulk className='social-icons text-black' />
           </Link>
-          <Link className='socials'>
+          <Link to='' className='socials'>
             <FaSpotify className='social-icons text-black' />
           </Link>
         </div>
