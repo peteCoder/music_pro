@@ -43,24 +43,26 @@ const Videos = () => {
             <div className="p-6">
                 <div className="flex flex-col justify-center items-center w-full space-y-5">
                     {playing && (
-                        <div className="fixed w-full h-full bg-black/90 z-[9000] inset-0 pt-10">
+                        <div className={`fixed w-full h-full bg-black/90 z-[9000] inset-0 pt-10 transition-opacity ${playing ? "opacity-100" : "opacity-0"}`}>
 
-                            <div className="relative p-7 h-3/4 flex flex-col opacity-0 opacity-100">
-                                <div className='h-5 w-full bg-black py-6 px-6 flex justify-between items-center'>
-                                    <FaTimes
-                                        onClick={() => setPlaying(false)}
-                                        className='text-xl sm:text-2xl md:text-3xl cursor-pointer' />
+                            <div className="relative p-7 h-3/4 flex flex-col">
+                                <div className='h-5 w-full bg-black py-6 px-4 flex justify-between items-center'>
+                                    <div className='p-1'>
+                                        <FaTimes
+                                            onClick={() => setPlaying(false)}
+                                            className='text-xl sm:text-2xl md:text-5xl cursor-pointer text-red-800'
+                                        />
+                                    </div>
+
                                     <div className="">Music</div>
                                 </div>
                                 <ReactPlayer
                                     url={`https://www.youtube.com/watch?v=${myVideoId}`}
-                                    // url={'https://www.youtube.com/embed/' + myVideoId + '?showinfo=0&enablejsapi=1&origin=http://localhost:5173/'}
                                     playing
                                     style={{ postion: "absolute", top: "0", left: "0", bottom: "0" }}
                                     width="100%"
                                     height="100%"
                                     controls={true}
-                                // loading="lazy"
                                 />
                             </div>
 
@@ -78,6 +80,7 @@ const Videos = () => {
                                         <button
                                             onClick={(e) => playVideoAction(e, item.youtube)}
                                             className='inline-block h-12 w-full text-lg xl:text-xl 
+                                                shadow-2xl hover:shadow-white/95
                                                 text-white bg-transparent mt-4 border 
                                                 hover:bg-white hover:text-black rounded-sm ease-in-out transition-all duration-300'
                                         >play video</button>

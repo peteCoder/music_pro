@@ -6,7 +6,7 @@ const News = () => {
     <div>
       <Header
         title="news"
-        position="text-left"
+        position="text-right"
       />
 
       <div className="">
