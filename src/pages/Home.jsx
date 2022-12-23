@@ -16,7 +16,7 @@ import About from '../containers/About';
 
 
 const Home = () => {
-    const [openAbout, setOpenAbout] = useState(true)
+    const [openAbout, setOpenAbout] = useState(false)
 
 
     return (
