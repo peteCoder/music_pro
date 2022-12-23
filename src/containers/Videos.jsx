@@ -3,16 +3,15 @@ import Header from '../components/Header'
 import ReactPlayer from 'react-player'
 import { videos as MyVideo } from '../utilities/utils'
 
+import { FaTimes } from 'react-icons/fa'
 
 const BASE_URL = "http://localhost:5173"
 
 
 const Videos = () => {
     const [playing, setPlaying] = useState(false)
-    const [data, setData] = useState([])
-    const [chosenVideo, setChosenVideo] = useState("")
     const [myVideoId, setMyVideoId] = useState("")
-    const [finalVideo, setFinalVideo] = useState("")
+
 
 
 
@@ -22,11 +21,6 @@ const Videos = () => {
         setMyVideoId(video)
         setPlaying(true)
     }
-
-    useEffect(() => {
-        
-
-    }, [])
 
     useEffect(() => {
         const body = window.document.body
@@ -49,17 +43,24 @@ const Videos = () => {
             <div className="p-6">
                 <div className="flex flex-col justify-center items-center w-full space-y-5">
                     {playing && (
-                        <div className="fixed w-full h-full bg-black/90 z-[9000] inset-0">
-                            <div className="relative p-7">
+                        <div className="fixed w-full h-full bg-black/90 z-[9000] inset-0 pt-10">
+
+                            <div className="relative p-7 h-3/4 flex flex-col opacity-0 opacity-100">
+                                <div className='h-5 w-full bg-black py-6 px-6 flex justify-between items-center'>
+                                    <FaTimes
+                                        onClick={() => setPlaying(false)}
+                                        className='text-xl sm:text-2xl md:text-3xl cursor-pointer' />
+                                    <div className="">Music</div>
+                                </div>
                                 <ReactPlayer
-                                    // url={`https://www.youtube.com/watch?v=${myVideoId}`}
-                                    url={'https://www.youtube.com/embed/'+ myVideoId + '?showinfo=0&enablejsapi=1&origin=http://localhost:5173/'}
+                                    url={`https://www.youtube.com/watch?v=${myVideoId}`}
+                                    // url={'https://www.youtube.com/embed/' + myVideoId + '?showinfo=0&enablejsapi=1&origin=http://localhost:5173/'}
                                     playing
                                     style={{ postion: "absolute", top: "0", left: "0", bottom: "0" }}
                                     width="100%"
                                     height="100%"
                                     controls={true}
-                                    // loading="lazy"
+                                // loading="lazy"
                                 />
                             </div>
 

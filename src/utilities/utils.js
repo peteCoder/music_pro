@@ -128,18 +128,18 @@ export const music = [
 export const videos = [
     {
         id: 1,
-        title: "Kalode",
-        artist: "Ayo ft. Davido",
+        title: "Risky Risky",
+        artist: "Risky (Official Video) ft. Popcaan",
         image: videoImage1,
         video: video1,
-        youtube: "c5NEzKrQT_A"
+        youtube: "B9H3iinXZv0"
     },
     {
         id: 2,
         title: "Blow my mind",
-        artist: "Ayo ft. Burna Boy",
+        artist: "Davido ft. Chris Brown",
         image: videoImage2,
         video: video2,
-        youtube: "8rOER0uOzz8"
+        youtube: "iSgXrOsE5hE"
     },
 ]
