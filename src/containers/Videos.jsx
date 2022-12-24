@@ -33,7 +33,7 @@ const Videos = () => {
     }, [playing])
 
     return (
-        <div>
+        <div id='videos'>
             <Header
                 title="videos"
                 position="text-left"

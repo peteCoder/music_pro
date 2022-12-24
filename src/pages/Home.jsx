@@ -5,7 +5,8 @@ import {
     Music,
     Shows,
     News,
-    Videos
+    Videos,
+    Footer
 } from '../containers'
 import Background from '../components/Background'
 
@@ -32,6 +33,7 @@ const Home = () => {
             <NeonButton onClick={() => setOpenAbout(prev => !prev)}>About DZ</NeonButton>
             <News />
             <Contact />
+            <Footer />
         </div>
     )
 }
