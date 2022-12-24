@@ -36,6 +36,10 @@ body {
     background-color: black;
 }
 
+.backdrop {
+    backdrop-filter: blur(4px);
+}
+
 @layer components {
     .socials {
         @apply h-10 w-10 rounded-full flex justify-center items-center cursor-pointer text-white ;
