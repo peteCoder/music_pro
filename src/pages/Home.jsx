@@ -31,7 +31,7 @@ const Home = () => {
             <Music />
             <Videos />
             <NeonButton onClick={() => setOpenAbout(prev => !prev)}>About DZ</NeonButton>
-            <News />
+            {/* <News /> */}
             <Contact />
             <Footer />
         </div>

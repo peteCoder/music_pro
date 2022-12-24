@@ -32,10 +32,6 @@ export const links = [
         title: 'Videos',
     },
     {
-        id: 'news',
-        title: 'News',
-    },
-    {
         id: 'contact',
         title: 'Contact',
     },
@@ -48,7 +44,8 @@ export const shows = [
         subTitle: "Tickets for Dreamz London shows out now!",
         href: "#",
         buttonText: "Get tickets",
-        image: img1
+        image: img1,
+        aboutShow: "London show tickets Lorem ipsum dolor sit amet consectetu adipisicing elit. Voluptatem nem repellendus molestiae, laborum a hic impedit iure rem voluptatibus vitae recusandae laboriosam ea nostrum natus harum nobis doloribus unde deleniti deserunt fuga aperiam ab! Nemo repellendus praesentium eligendi repellat ullam?"
     },
     {
         id: 2,
@@ -56,7 +53,9 @@ export const shows = [
         subTitle: "Tickets for Dreamz US shows out now!",
         buttonText: "Book a spot",
         href: "#",
-        image: img2
+        image: img2,
+        aboutShow: "US show tickets Lorem ipsum dolor sit amet consectetu adipisicing elit. Voluptatem nem repellendus molestiae, laborum a hic impedit iure rem voluptatibus vitae recusandae laboriosam ea nostrum natus harum nobis doloribus unde deleniti deserunt fuga aperiam ab! Nemo repellendus praesentium eligendi repellat ullam?"
+
     },
     {
         id: 3,
@@ -64,7 +63,9 @@ export const shows = [
         subTitle: "Tickets for Dreamz Argentina shows out now!",
         buttonText: "Have a good time",
         href: "#",
-        image: img3
+        image: img3,
+        aboutShow: "Argentina show tickets Lorem ipsum dolor sit amet consectetu adipisicing elit. Voluptatem nem repellendus molestiae, laborum a hic impedit iure rem voluptatibus vitae recusandae laboriosam ea nostrum natus harum nobis doloribus unde deleniti deserunt fuga aperiam ab! Nemo repellendus praesentium eligendi repellat ullam?"
+
     },
     {
         id: 4,
@@ -72,8 +73,10 @@ export const shows = [
         subTitle: "Tickets for Dreamz Nigerian shows out now!",
         buttonText: "Register a spot",
         href: "#",
-        image: img4
-    },
+        image: img4,
+        aboutShow: "Nigerian show tickets Lorem ipsum dolor sit amet consectetu adipisicing elit. Voluptatem nem repellendus molestiae, laborum a hic impedit iure rem voluptatibus vitae recusandae laboriosam ea nostrum natus harum nobis doloribus unde deleniti deserunt fuga aperiam ab! Nemo repellendus praesentium eligendi repellat ullam?"
+
+    }
 
 ]
 
