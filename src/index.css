@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
 
 html, body {
     scroll-behavior: smooth;
     transition: .5s ease-in;
-    font-family: cursive;
+    font-family: 'Poppins', sans-serif;
 }
 
 body.remove-scrollbar::-webkit-scrollbar {
