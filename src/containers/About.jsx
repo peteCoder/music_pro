@@ -27,7 +27,7 @@ const About = ({ value }) => {
         scale: openAbout ? 1 : 0,
         opacity: openAbout ? 1 : 0.7
       }}
-      className={`fixed overflow-y-auto overflow-x-hidden w-full h-full bg-black/100 z-[9000] inset-0 pt-10 transition-opacity ${true ? "opacity-100" : "opacity-0"}`}>
+      className={`fixed overflow-y-auto overflow-x-hidden w-full h-full bg-black z-[9000] inset-0 pt-10 transition-opacity ${true ? "opacity-100" : "opacity-0"}`}>
       <FaTimes onClick={() => setOpenAbout(false)} className='text-red-800 cursor-pointer fixed top-3 right-8 text-3xl md:text-4xl' />
       <div className="">
         <Header
